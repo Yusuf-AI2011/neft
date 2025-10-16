@@ -1,0 +1,74 @@
+.intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('/images/INTRO-IMAGE.png');
+    gap: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 0px 5% 0px;
+    margin: auto;
+
+    &__title {
+        width: 1100px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 77px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 200px;
+    }
+
+    &__span {
+        color: #DBA833;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #CECECE;
+    }
+
+    &__button {
+        width: 290px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #DBA833;
+        color: #FFFFFF;
+        border: none;
+    }
+
+    &__subtitle {
+        position: relative;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        color: #FFFFFF;
+        top: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .intro {
+
+
+        &__title {
+            width: 90%;
+            font-size: 40px;
+            margin-top: 0px;
+        }
+
+        &__text {
+            width: 90%;
+            font-size: 18px;
+        }
+    }
+}

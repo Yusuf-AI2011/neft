@@ -1,0 +1,51 @@
+.geog {
+
+    &__circle {
+        width: 1000px;
+        height: 600px;
+        margin: auto;
+        border: none;
+        border-radius: 50%;
+        background: #F8F8F8;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        border: 3px dashed #DBA833;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 57px;
+        text-align: center;
+        color: #000000;
+    }
+
+    &__span {
+        color: #DBA833;
+    }
+
+    &__cart {
+        width: 600px;
+        height: 380px;
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .geog {
+        &__circle {
+            width: 90%;
+            margin-top: 20%;
+        }
+
+        &__cart {
+            width: 80%;
+            height: 200px;
+        }
+    }
+}
