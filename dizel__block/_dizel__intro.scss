@@ -1,0 +1,97 @@
+.dizel__intro-wrapper {
+  width: 100%;
+  position: relative;
+  background-image: url("/images/INTRO-IMAGE.png");
+  background-size: cover;
+}
+
+.dizel__intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  padding: 100px 0px;
+
+  &__title {
+    width: 850px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__span {
+    color: #dba833;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__card {
+    background: #242424;
+    padding: 8px 13px;
+    border: 3px dashed #dba833;
+    color: #dba833;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #cecece;
+  }
+
+  &__button {
+    color: #ffffff;
+    background-color: #dba833;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 53px;
+  }
+
+  &__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__card,
+  &__button {
+    transition: all 1s;
+  }
+
+  &__card:hover,
+  &__button:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .dizel__intro {
+    &__left {
+      display: none;
+    }
+
+    &__right {
+      display: none;
+    }
+
+    &__cards {
+      flex-direction: column;
+    }
+
+    &__title {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.dizel__dizel-wrapper {
+  width: 100%;
+}
+
+.dizel__dizel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  &__card {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px dashed #828282;
+    padding: 20px;
+  }
+
+  &__img {
+    width: 350px;
+  }
+
+  &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 39px;
+        text-align: center;
+        color: #000000;
+  }
+
+  &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #5B5B5B;
+  }
+
+  &__button {
+    border-radius: 5px;
+    border: 2px solid #DBA833;
+    color: #DBA833;
+    padding: 10px 100px;
+    transition: all 1s;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__button:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .dizel__dizel {
+
+        &__card {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
